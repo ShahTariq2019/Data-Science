@@ -1,0 +1,13 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Generate randon numbers 5x5
+data = np.matrix(np.random.random((5, 5)))
+print(data) # printing data
+y=data[1,:] # extarct one row
+print(y) # printing y
+x=np.linspace(0,4,5) # generate x data
+plt.plot(x,y.transpose(),'ko') # plotting
+plt.xlabel('X Axis')
+plt.ylabel('Y Axis')
+plt.show() # display
